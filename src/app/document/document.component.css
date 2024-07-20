@@ -1,0 +1,74 @@
+/* Container and Overall Styling */
+.container {
+  margin-top: 5rem;
+  font-family: 'Roboto', sans-serif;
+  max-width: 100%;
+  padding: 0 2rem;
+}
+
+h2 {
+  text-align: center;
+  font-size: 2.2rem;
+  color: #333;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* Table Styling */
+.table {
+  width: 100%;
+  margin-bottom: 1rem;
+  color: #212529;
+  border: 1px solid #dee2e6;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  background-color: #ffffff;
+  table-layout: auto; /* Automatic table layout */
+}
+
+.table th, .table td {
+  padding: 0.5rem; /* Reduce padding */
+  vertical-align: middle;
+  border-top: 1px solid #dee2e6;
+  white-space: nowrap; /* Prevent text wrapping */
+  overflow: hidden;
+  text-overflow: ellipsis; /* Add ellipsis for overflowed text */
+}
+
+.table thead th {
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  border-right: 1px solid #dee2e6;
+}
+
+.table thead th:last-child {
+  border-right: none;
+}
+
+.table tbody tr {
+  transition: background-color 0.3s ease;
+}
+
+.table tbody tr:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+.table tbody td {
+  text-align: center;
+  border-right: 1px solid #dee2e6;
+}
+
+.table tbody td:last-child {
+  border-right: none;
+}
+
+/* Add horizontal scroll if table is too wide */
+.table-container {
+  overflow-x: auto;
+}

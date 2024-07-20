@@ -1,0 +1,48 @@
+/* src\app\header\header.component.css*/
+.navbar {
+  background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%); /* Gradient de couleurs vibrant */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* Ombre plus marquée pour un effet flottant */
+  padding: 0.5rem 1rem; /* Ajustement des paddings pour un look plus compact et moderne */
+}
+
+/* Style élégant pour la marque de la barre de navigation */
+.navbar-brand {
+  font-size: 1.75rem; /* Augmente la taille pour plus de visibilité */
+  color: #ffffff !important; /* Couleur blanche pour ressortir sur le gradient */
+  font-weight: bold; /* Rend le texte plus épais */
+  letter-spacing: 0.05rem; /* Espacement légèrement augmenté pour un effet stylé */
+  transition: transform 0.3s ease-in-out; /* Animation douce pour le survol */
+}
+
+.navbar-brand:hover {
+  transform: scale(1.05); /* Légère augmentation de taille au survol pour attirer l'attention */
+}
+
+/* Personnalisation avancée pour le bouton du menu hamburger */
+.navbar-toggler {
+  filter: invert(100%); /* Inverse les couleurs pour ressortir sur le fond sombre */
+}
+
+/* Style dynamique pour les liens de la navigation */
+.nav-link {
+  color: rgba(255, 255, 255, 0.8) !important; /* Couleur blanche légèrement transparente pour les liens */
+  transition: color 0.2s ease-in-out; /* Transition douce pour le changement de couleur */
+}
+
+.nav-link:hover, .nav-link:focus {
+  color: rgba(255, 255, 255, 1) !important; /* Augmente l'opacité au survol pour un effet visuel marqué */
+}
+
+/* Style pour le bouton de déconnexion */
+.btn-outline-danger {
+  border-color: rgba(255, 255, 255, 0.5); /* Bordure plus discrète */
+  color: rgba(255, 255, 255, 0.8); /* Couleur initiale adaptée au thème */
+  transition: all 0.3s ease-in-out; /* Transition douce pour les interactions */
+}
+
+.btn-outline-danger:hover {
+  background-color: rgba(255, 255, 255, 0.2); /* Fond légèrement coloré au survol */
+  color: #ffffff; /* Couleur du texte blanche au survol */
+  border-color: rgba(255, 255, 255, 0); /* Disparition de la bordure au survol */
+}
+

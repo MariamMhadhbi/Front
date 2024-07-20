@@ -1,0 +1,125 @@
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+.login-background {
+  background: linear-gradient(135deg, #009FFF, #ec2F4B);
+  background-size: 400% 400%;
+  animation: BackgroundGradient 15s ease infinite;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+@keyframes BackgroundGradient {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.login-container {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 20px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  width: 100%;
+  max-width: 1000px;
+}
+
+.image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  background: white;
+  padding: 20px;
+}
+
+.image-container img {
+  max-width: 100%;
+  height: auto;
+}
+
+.card {
+  border: none;
+  border-radius: 0;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex: 1;
+}
+
+.card-title {
+  font-size: 2.5rem;
+  color: transparent;
+  background: linear-gradient(135deg, #009FFF, #ec2F4B);
+  -webkit-background-clip: text;
+  text-align: center;
+}
+
+.form-control {
+  border: 2px solid #e6e6e6;
+  border-radius: 10px;
+  padding: 15px 20px;
+  font-size: 1.2rem;
+  transition: border 0.3s ease;
+}
+
+.form-control:focus {
+  border-color: #009FFF;
+  box-shadow: 0 0 8px rgba(0, 159, 255, 0.5);
+}
+
+.btn-primary {
+  border-radius: 20px;
+  padding: 10px 30px;
+  font-size: 1.2rem;
+  color: white;
+  background: linear-gradient(135deg, #009FFF, #ec2F4B);
+  border: none;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn-primary:hover {
+  transform: scale(1.05);
+  box-shadow: 0 5px 15px rgba(0, 159, 255, 0.4);
+}
+
+@media (max-width: 768px) {
+  .login-container {
+    flex-direction: column;
+  }
+
+  .image-container, .card {
+    flex: none;
+    width: 100%;
+  }
+
+  .card {
+    padding: 20px;
+  }
+
+  .form-control {
+    font-size: 1rem;
+    padding: 10px 15px;
+  }
+
+  .btn-primary {
+    font-size: 1rem;
+    padding: 8px 20px;
+  }
+
+  .card-title {
+    font-size: 2rem;
+  }
+}

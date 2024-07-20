@@ -1,0 +1,46 @@
+/* src\app\sidebar\sidebar.component.css */
+.sidebar {
+  width: 100%; /* Utilisez toute la largeur sous le navbar */
+  background: linear-gradient(to right, #6a11cb 0%, #2575fc 100%);
+  color: white;
+  padding: 15px 20px; /* Padding ajusté pour mieux s'intégrer sous le navbar */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* Ajout d'une ombre pour l'effet flottant */
+}
+
+.menu-header {
+  font-size: 1.2rem;
+  text-align: center;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.menu-item {
+  margin: 10px 0;
+  display: flex;
+  align-items: center;
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  border-radius: 10px; /* Bordures arrondies pour un look de bouton */
+  padding: 10px;
+  background: rgba(255, 255, 255, 0.1); /* Légère transparence pour l'effet de bouton */
+}
+
+.menu-item i {
+  margin-right: 10px;
+}
+
+.menu-item a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.menu-item:hover {
+  transform: translateY(-5px); /* Effet flottant léger au survol */
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3); /* Ombre pour l'effet flottant */
+}
+
+.menu-section {
+  font-weight: bold;
+  padding-top: 20px;
+  border-top: 7px solid rgba(255, 255, 255, 0.3);
+}

@@ -1,0 +1,70 @@
+/* src\app\admin\admin.component.css */
+.container {
+  margin-top: 5rem;
+  animation: fadeInUp 0.5s ease-in-out;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 20px, 0);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+/* Stylisation avancée pour la carte */
+.card {
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  background: linear-gradient(135deg, #ffffff, #ece9e6); /* Un subtil gradient pour le fond */
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* Stylisation de l'en-tête de la carte */
+.card-header {
+  background-color: #6a11cb; /* Couleur de fond vibrant */
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+  background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%); /* Gradient pour un effet visuel dynamique */
+}
+
+/* Amélioration du corps de la carte */
+.card-body {
+  padding: 2rem;
+  background-color: rgba(255, 255, 255, 0.8); /* Légère transparence pour un effet doux */
+  transition: background-color 0.3s ease-in-out;
+}
+
+.card-body:hover {
+  background-color: rgba(255, 255, 255, 0.95);
+}
+
+/* Animation subtile pour le contenu administratif */
+.card-body p {
+  position: relative;
+  font-size: 1.1rem;
+  color: #333;
+  animation: slideInRight 0.5s ease-in-out;
+}
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translate3d(20px, 0, 0);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}

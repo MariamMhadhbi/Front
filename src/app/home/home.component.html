@@ -1,0 +1,17 @@
+<!-- src/app/home/home.component.html -->
+<app-header></app-header>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-3">
+      <app-sidebar></app-sidebar>  <!-- Inclusion du sidebar ici -->
+    </div>
+    <div class="col-md-9">
+      <div class="main-content">
+        <h1>Bienvenue dans votre espace personnel</h1>
+        <p>Contenu spécifique à l'utilisateur et autres informations pertinentes ici.</p>
+        <p *ngIf="content">{{ content }}</p>
+        <p *ngIf="!content">{{ pubContent }}</p>
+      </div>
+    </div>
+  </div>
+</div>

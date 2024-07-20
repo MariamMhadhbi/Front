@@ -1,0 +1,15 @@
+/* src\app\home\home.component.css*/
+.container-fluid {
+  display: flex;
+  flex-wrap: nowrap;
+}
+.col-md-3 {
+  flex: 0 0 25%;  /* Ajustement pour le sidebar */
+}
+.col-md-9 {
+  flex: 0 0 75%;  /* Ajustement pour le contenu principal */
+}
+.main-content {
+  padding: 20px;
+  background-color: #f8f9fa;
+}

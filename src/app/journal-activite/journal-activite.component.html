@@ -1,0 +1,14 @@
+<!-- src/app/journal-activite/journal-activite.component.html -->
+<app-header></app-header>
+<div class="container">
+  <h2>Journal d'Activité</h2>
+  <div *ngFor="let log of activityLogs" class="activity-log">
+    <p class="activity-log-content">
+      <span class="activity-log-action">{{ log.action }}</span>
+      <br>
+      <span class="activity-log-date">{{ log.date | date:'dd/MM/yyyy HH:mm:ss' }}</span>
+      depuis l'adresse IP <span class="activity-log-ip">{{ log.ip }}</span>
+    </p>
+  </div>
+</div>
+

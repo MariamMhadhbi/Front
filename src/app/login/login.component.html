@@ -1,0 +1,54 @@
+<div class="login-background">
+  <div class="login-container">
+    <div class="image-container">
+      <img src="assets/login-image.png" alt="Decorative">
+    </div>
+    <div class="card">
+      <div class="card-body">
+        <h4 class="card-title">Login</h4>
+        <div class="alert alert-danger" *ngIf="errorMessage">
+          <p>{{ errorMessage }}</p>
+        </div>
+        <form #formLogin="ngForm" (ngSubmit)="onSubmitLogin(formLogin)">
+          <div class="mb-3">
+            <label for="matricule" class="form-label">Matricule</label>
+            <input
+              type="text"
+              class="form-control"
+              id="matricule"
+              placeholder="Saisissez votre matricule"
+              ngModel
+              #matricule="ngModel"
+              name="matricule"
+              required
+            />
+            <div *ngIf="matricule.errors && formLogin.submitted" class="text-danger">
+              Le matricule est requis !
+            </div>
+          </div>
+          <div class="mb-3">
+            <label for="password" class="form-label">Mot de passe</label>
+            <input
+              type="password"
+              class="form-control"
+              id="password"
+              placeholder="Saisissez votre mot de passe"
+              ngModel
+              #password="ngModel"
+              name="password"
+              required
+              minlength="6"
+            />
+            <div *ngIf="password.errors && formLogin.submitted" class="text-danger">
+              <div *ngIf="password.errors['required']">Le mot de passe est requis.</div>
+              <div *ngIf="password.errors['minlength']">
+                Le mot de passe doit comporter au moins 6 caractères.
+              </div>
+            </div>
+          </div>
+          <button type="submit" class="btn btn-primary">Login</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
